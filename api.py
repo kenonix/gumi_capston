@@ -50,3 +50,5 @@ response = client.chat.completions.create(
         }
     ],
     temperature=0.2,  # 창의성 수준 (낮을수록 더 일관된 결과)
+)
+print(response.choices[0].message.content)
